@@ -15,10 +15,12 @@ namespace eRestaurantSystem.DAL.Entities
     {
         [Key]
         public int TableID { get; set; }
+        [Required,Range(1,25)]
         public byte TableNumber { get; set; } //tinyint in sql so use byte
         public bool Smoking { get; set; }
+        [Required]
         public int Capacity { get; set; }
-        public bool Availablt { get; set; }
+        public bool Available { get; set; }
 
         //Navigation Properties
         // the Reservations table (sql) is a many to many
@@ -35,5 +37,10 @@ namespace eRestaurantSystem.DAL.Entities
         //accomondate this relationship
 
         public virtual ICollection<Reservation> Reservations { get; set; }
+
+        public Table()
+        {
+            Available = true;
+        }
     }
 }
