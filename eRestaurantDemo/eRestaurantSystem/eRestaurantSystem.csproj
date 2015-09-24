@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\AdminController.cs" />
     <Compile Include="DAL\Entities\Reservation.cs" />
     <Compile Include="DAL\Entities\SpecialEvent.cs" />
     <Compile Include="DAL\Entities\Table.cs" />
@@ -55,7 +56,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
     <Folder Include="DAL\DTOs\" />
     <Folder Include="DAL\POCOs\" />
   </ItemGroup>
