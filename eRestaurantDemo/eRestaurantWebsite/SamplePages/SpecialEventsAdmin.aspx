@@ -1,17 +1,16 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="SpecialEventsAdmin.aspx.cs" Inherits="SpecialEventsAdmin" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" 
+    CodeFile="SpecialEventsAdmin.aspx.cs" Inherits="SamplePages_SpecialEventsAdmin" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
-
+    
     <table align="center" style="width: 70%">
         <tr>
-            <td align ="right" style="width:50%">Select an Event:</td>
+            <td align="right" style="width:50%">Select an Event:&nbsp;</td>
             <td>
-                <asp:DropDownList ID="SpecialEventList" runat="server" AppendDataBoundItems="True" DataSourceID="ODSSpecialEvents"
-                     DataTextField="Description" DataValueField="EventCode"
-                    >
+                <asp:DropDownList ID="SpecialEventList" runat="server" AppendDataBoundItems="True" DataSourceID="ODSSpecialEvents" DataTextField="Description" DataValueField="EventCode">
                     <asp:ListItem Value="z">Select event</asp:ListItem>
                 </asp:DropDownList>
-                <asp:LinkButton ID="FetchRegistration" runat="server">Fetch Registrations</asp:LinkButton>
+&nbsp;<asp:LinkButton ID="FetchRegistrations" runat="server">Fetch Registrations</asp:LinkButton>
             </td>
         </tr>
         <tr>
@@ -19,31 +18,36 @@
         </tr>
         <tr>
             <td colspan="2" align="center">
-                <asp:GridView ID="ReservationList" runat="server" AllowCustomPaging="True" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="ODSReservations">
-                    <AlternatingRowStyle BackColor="#CCCCCC" />
+                <asp:GridView ID="ReservationList" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="ODSReservations">
+                    <AlternatingRowStyle BackColor="Silver" />
                     <Columns>
-                        <asp:BoundField DataField="NumberInParty" HeaderText="Party" SortExpression="NumberInParty">
-                        <HeaderStyle HorizontalAlign="Right" />
-                        <ItemStyle HorizontalAlign="Right" />
+                        <asp:BoundField DataField="CustomerName" HeaderText="Name" >
+                        <HeaderStyle HorizontalAlign="Left" />
+                        <ItemStyle HorizontalAlign="Left" />
                         </asp:BoundField>
-                        <asp:BoundField DataField="ContactPhone" HeaderText="Phone" SortExpression="ContactPhone">
+                        <asp:BoundField DataField="ReservationDate" HeaderText="Date" SortExpression="ReservationDate" DataFormatString="{0:MMM dd, yyyy}" >
                         <HeaderStyle HorizontalAlign="Center" />
                         <ItemStyle HorizontalAlign="Center" />
                         </asp:BoundField>
-                        <asp:BoundField DataField="ReservationStatus" HeaderText="Status" SortExpression="ReservationStatus">
-                        <HeaderStyle HorizontalAlign="Center" />
+                        <asp:BoundField DataField="NumberInParty" HeaderText="Size" SortExpression="NumberInParty" >
+                        <HeaderStyle HorizontalAlign="Right" />
+                        <ItemStyle HorizontalAlign="Right" />
                         </asp:BoundField>
-                        <asp:DynamicField DataField="CustomerName" HeaderText="CustomerName" />
-                        <asp:DynamicField DataField="ReservationDate" HeaderText="ReservationDate" />
+                        <asp:BoundField DataField="ContactPhone" HeaderText="Phone" SortExpression="ContactPhone" >
+                        <HeaderStyle HorizontalAlign="Center" />
+                        <ItemStyle HorizontalAlign="Center" />
+                        </asp:BoundField>
+                        <asp:BoundField DataField="ReservationStatus" HeaderText="Status" SortExpression="ReservatonStatus" >
+                        <ItemStyle HorizontalAlign="Center" />
+                        </asp:BoundField>
                     </Columns>
                     <EmptyDataTemplate>
-                        No data to display at this time
+                        No data to display at this time.
                     </EmptyDataTemplate>
-                    <HeaderStyle BackColor="Gray" Font-Size="Larger" />
-                    <PagerSettings FirstPageText="start" LastPageText="end" Mode="NumericFirstLast" PageButtonCount="4" Position="TopAndBottom" />
-                </asp:GridView>
-            </td>
-
+                    <HeaderStyle BackColor="#666666" Font-Size="Large" />
+                    <PagerSettings FirstPageText="Start" LastPageText="End" Mode="NumericFirstLast" PageButtonCount="4" Position="TopAndBottom" />
+                </asp:GridView> </td>
+           
         </tr>
         <tr>
             <td>&nbsp;</td>

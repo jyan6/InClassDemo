@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 #region Additional Namespaces
 using eRestaurantSystem.DAL;
 using eRestaurantSystem.DAL.Entities;
-using System.ComponentModel;//Object Data Source
+using System.ComponentModel; //Object Data Source
 #endregion
 
 namespace eRestaurantSystem.BLL
@@ -15,7 +15,7 @@ namespace eRestaurantSystem.BLL
     [DataObject]
     public class AdminController
     {
-        [DataObjectMethod(DataObjectMethodType.Select, false)]
+        [DataObjectMethod(DataObjectMethodType.Select,false)]
         public List<SpecialEvent> SpecialEvents_List()
         {
             //connect to our DbContext class in the DAL
@@ -47,5 +47,6 @@ namespace eRestaurantSystem.BLL
                 return results.ToList();
             }
         }
+      
     }
 }

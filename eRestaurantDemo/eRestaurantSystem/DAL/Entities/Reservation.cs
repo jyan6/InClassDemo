@@ -14,12 +14,11 @@ namespace eRestaurantSystem.DAL.Entities
     public class Reservation
     {
         [Key]
-
         public int ReservationID { get; set; }
         [Required]
-        [StringLength(30, MinimumLength=5)]
+        [StringLength(30,MinimumLength=5)]
         public string CustomerName { get; set; }
-        public DateTime ReservationDate { get; set;}
+        public DateTime ReservationDate {get;set;}
         [Required, Range(1,16)]
         public int NumberInParty { get; set; }
         [StringLength(15)]
@@ -34,17 +33,18 @@ namespace eRestaurantSystem.DAL.Entities
         public virtual SpecialEvent Event { get; set; }
 
         // the Reservations table (sql) is a many to many
-        // relationship to the Tables table (sql)
+        //relationship to the Tables table (sql)
 
         //Sql solves this problem by having an associate table
         //that has a compound primary key created from Reservations
-        //and Tables
+        // and Tables.
 
-        //we will NOT be createing an enetity for this associate table.
+        //We will NOT be creating an entity for this associate table.
         //Instead we will create on overload map in our DbContext class
 
         //However, we can still create the virtual navigation property to
         //accomondate this relationship
+
         public virtual ICollection<Table> Tables { get; set; }
     }
 }
