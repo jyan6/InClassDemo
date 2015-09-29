@@ -15,7 +15,7 @@ namespace eRestaurantSystem.BLL
     [DataObject]
     public class AdminController
     {
-        [DataObjectMethod(DataObjectMethodType.Select,false)]
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
         public List<SpecialEvent> SpecialEvents_List()
         {
             //connect to our DbContext class in the DAL
@@ -24,7 +24,27 @@ namespace eRestaurantSystem.BLL
             using (var context = new eRestaurantContext())
             {
                 //method syntax
-                return context.SpecialEvents.OrderBy(x => x.Description).ToList();
+                //return context.SpecialEvents.OrderBy(x => x.Description).ToList();
+
+                //query syntax
+                var results = from item in context.SpecialEvents
+                              orderby item.Description
+                              select item;
+                return results.ToList();
+            }
+        }
+
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
+        public List<Reservation> GetReservationsByEventCode(string eventcode)
+        {
+            using (var context = new eRestaurantContext())
+            {
+                //query syntax
+                var results = from item in context.Reservations
+                              where item.EventCode.Equals(eventcode)
+                              orderby item.CustomerName, item.ReservationDate
+                              select item;
+                return results.ToList();
             }
         }
     }
