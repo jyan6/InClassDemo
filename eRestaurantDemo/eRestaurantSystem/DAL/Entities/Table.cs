@@ -37,6 +37,7 @@ namespace eRestaurantSystem.DAL.Entities
         //accomondate this relationship
 
         public virtual ICollection<Reservation> Reservations { get; set; }
+        public virtual ICollection<Bill> Bills { get; set; }
 
         public Table()
         {
