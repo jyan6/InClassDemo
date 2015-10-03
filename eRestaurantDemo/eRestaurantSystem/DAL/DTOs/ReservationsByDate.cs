@@ -11,7 +11,7 @@ using System.Collections;
 
 namespace eRestaurantSystem.DAL.DTOs
 {
-    public class ReservationByDate
+    public class ReservationsByDate
     {
         public string Description { get; set; }
         //the next variable will hold a collection of reservation rows

@@ -50,7 +50,7 @@ namespace eRestaurantSystem.BLL
             }
         }
       [DataObjectMethod(DataObjectMethodType.Select,false)]
-        public List<ReservationByDate> GetReservationByData(string reservationdate)
+        public List<ReservationsByDate> GetReservationByData(string reservationdate)
         {
           using (var context = new eRestaurantContext())
           {
@@ -62,7 +62,7 @@ namespace eRestaurantSystem.BLL
 
               var result = from eventitem in context.SpecialEvents
                            orderby eventitem.Description
-                           select new ReservationByDate() // a new instance for each specialevent row  on the table
+                           select new ReservationsByDate() // a new instance for each specialevent row  on the table
                            {
                                Description = eventitem.Description,
                                Reservations = from row in eventitem.Reservations
