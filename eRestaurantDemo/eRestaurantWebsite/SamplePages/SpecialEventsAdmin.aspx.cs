@@ -11,4 +11,8 @@ public partial class SamplePages_SpecialEventsAdmin : System.Web.UI.Page
     {
 
     }
+    protected void ReservationList_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
 }

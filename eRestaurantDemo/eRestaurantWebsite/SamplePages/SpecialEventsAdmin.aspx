@@ -18,7 +18,7 @@
         </tr>
         <tr>
             <td colspan="2" align="center">
-                <asp:GridView ID="ReservationList" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="ODSReservations">
+                <asp:GridView ID="ReservationList" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="ODSReservations" OnSelectedIndexChanged="ReservationList_SelectedIndexChanged">
                     <AlternatingRowStyle BackColor="Silver" />
                     <Columns>
                         <asp:BoundField DataField="CustomerName" HeaderText="Name" >
