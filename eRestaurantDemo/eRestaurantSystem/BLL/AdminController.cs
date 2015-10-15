@@ -17,6 +17,8 @@ namespace eRestaurantSystem.BLL
     [DataObject]
     public class AdminController
     {
+        #region Quries
+
         [DataObjectMethod(DataObjectMethodType.Select,false)]
         public List<SpecialEvent> SpecialEvents_List()
         {
@@ -49,7 +51,8 @@ namespace eRestaurantSystem.BLL
                 return results.ToList();
             }
         }
-      [DataObjectMethod(DataObjectMethodType.Select,false)]
+
+        [DataObjectMethod(DataObjectMethodType.Select,false)]
         public List<ReservationsByDate> GetReservationByData(string reservationdate)
         {
           using (var context = new eRestaurantContext())
@@ -104,6 +107,53 @@ namespace eRestaurantSystem.BLL
               return result.ToList();
           }
       }
+        #endregion
 
-    }
-}
+        #region Add, Update, Delete of CRUD for CQRS
+        [DataObjectMethod(DataObjectMethodType.Insert,false)]
+        public void SpecialEvents_Add(SpecialEvent item)
+        {
+            using (eRestaurantContext context = new eRestaurantContext())
+            {
+                //these methods are execute using an instance level item
+                //set up a instance pointer and initailize to null
+                SpecialEvent added = null;
+                //setup the command to execute the add
+                added = context.SpecialEvents.Add(item);
+                //command is not executed until it is actually saved
+                context.SaveChanges();
+            }
+        }
+
+        [DataObjectMethod(DataObjectMethodType.Update, false)]
+        public void SpecialEvents_Update(SpecialEvent item)
+        {
+            using (eRestaurantContext context = new eRestaurantContext())
+            {
+                //indicate the updating item instance
+                //alter the modified status flag for this instance
+                context.Entry<SpecialEvent>(context.SpecialEvents.Attach(item)).State =
+                    System.Data.Entity.EntityState.Modified;
+                //command is not executed until it is actually saved
+                context.SaveChanges();
+            }
+        }
+
+        [DataObjectMethod(DataObjectMethodType.Delete, false)]
+        public void SpecialEvents_Delete(SpecialEvent item)
+        {
+            using (eRestaurantContext context = new eRestaurantContext())
+            {
+                //lookup the instance and record if found
+                SpecialEvent existing = context.SpecialEvents.Find(item.EventCode);
+                //setup the command to execute the delete
+                context.SpecialEvents.Remove(existing);
+                //command is not executed until it is actually saved
+                context.SaveChanges();
+            }
+        }
+
+
+        #endregion
+    }//eof class
+}//eof namespace
