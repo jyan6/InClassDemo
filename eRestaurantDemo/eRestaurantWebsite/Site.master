@@ -49,17 +49,12 @@
                     <a class="navbar-brand" runat="server" href="~/">Junyu Yan</a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
+                    <%-- <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/SamplePages/SpecialEventsAdmin">Admin</a></li>
-                        <li><a runat="server" href="~/SamplePages/ListView">LV Reservation</a></li>
-                        <li><a runat="server" href="~/SamplePages/ReservationByDate">RPT Reservation</a></li>
-                        <li><a runat="server" href="~/SamplePages/CategoryMenuItems">RPT2 CatMenuItem</a></li>
-                        <li><a runat="server" href="~/CommandPages/SpecialEventsAdmin">LV CRUD</a></li>
-                        <li><a runat="server" href="~/CommandPages/WaiterAdmin">Single Row CRUD</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
+
+                        
+                    </ul>--%>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
@@ -76,6 +71,40 @@
                             </ul>
                         </LoggedInTemplate>
                     </asp:LoginView>
+                    <asp:Menu ID="navMenu" runat="server" 
+                    BackColor="#000000" BorderColor="Red"
+                    StaticMenuItemStyle-ForeColor="#999999" 
+                    StaticMenuItemStyle-VerticalPadding="10px"
+                    StaticMenuItemStyle-HorizontalPadding="10px"
+                    RenderingMode="List" Orientation="Horizontal" 
+                    DynamicMenuItemStyle-ForeColor="#999999" 
+                    DynamicMenuStyle-BackColor="Black">
+                    <Items>
+                        <asp:MenuItem Text="Home" NavigateUrl="~/"></asp:MenuItem>
+
+                        <asp:MenuItem Text="DDMenu" Value="DDMenu">
+                            <asp:MenuItem Text="About Us" NavigateUrl="~/About.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Contact Us" NavigateUrl="~/Contact.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="LV Reservation" NavigateUrl="~/SamplePages/ListView"></asp:MenuItem>
+                            <asp:MenuItem Text="RPT Reservation" NavigateUrl="~/SamplePages/ReservationByDate"></asp:MenuItem>
+                            <asp:MenuItem Text="RPT2 CatMenuItem" NavigateUrl="~/SamplePages/CategoryMenuItems"></asp:MenuItem>
+                            <asp:MenuItem Text="LV CRUD" NavigateUrl="~/CommandPages/SpecialEventsAdmin"></asp:MenuItem>
+                            <asp:MenuItem Text="Single Row CRUD" NavigateUrl="~/CommandPages/WaiterAdmin"></asp:MenuItem>
+
+                            <%--<li><a runat="server" href="~/SamplePages/ListView">LV Reservation</a></li>
+                        <li><a runat="server" href="~/SamplePages/ReservationByDate">RPT Reservation</a></li>
+                        <li><a runat="server" href="~/SamplePages/CategoryMenuItems">RPT2 CatMenuItem</a></li>
+                        <li><a runat="server" href="~/CommandPages/SpecialEventsAdmin">LV CRUD</a></li>
+                        <li><a runat="server" href="~/CommandPages/WaiterAdmin">Single Row CRUD</a></li>
+                        <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/Contact">Contact</a></li>--%>
+
+                        </asp:MenuItem>
+
+                        <asp:MenuItem Text="About Us" NavigateUrl="~/About.aspx"></asp:MenuItem>
+                         <asp:MenuItem Text="Contact Us" NavigateUrl="~/Contact.aspx"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
                 </div>
             </div>
         </div>
