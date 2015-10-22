@@ -90,6 +90,7 @@
                             <asp:MenuItem Text="RPT2 CatMenuItem" NavigateUrl="~/SamplePages/CategoryMenuItems"></asp:MenuItem>
                             <asp:MenuItem Text="LV CRUD" NavigateUrl="~/CommandPages/SpecialEventsAdmin"></asp:MenuItem>
                             <asp:MenuItem Text="Single Row CRUD" NavigateUrl="~/CommandPages/WaiterAdmin"></asp:MenuItem>
+                            <asp:MenuItem Text="Report" NavigateUrl="~/Reports/CategoryMenuItemsReport"></asp:MenuItem>
 
                             <%--<li><a runat="server" href="~/SamplePages/ListView">LV Reservation</a></li>
                         <li><a runat="server" href="~/SamplePages/ReservationByDate">RPT Reservation</a></li>
