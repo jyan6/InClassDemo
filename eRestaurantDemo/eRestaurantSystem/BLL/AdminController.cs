@@ -123,8 +123,8 @@ namespace eRestaurantSystem.BLL
           }
         }
 
-      [DataObjectMethod(DataObjectMethodType.Select, false)]
-      public List<MenuCategoryItems> MenuCategoryItems_List()
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
+        public List<MenuCategoryItems> MenuCategoryItems_List()
       {
           using (var context = new eRestaurantContext())
           {
@@ -146,7 +146,7 @@ namespace eRestaurantSystem.BLL
           }
       }
         #endregion
-      [DataObjectMethod(DataObjectMethodType.Insert,false)]
+        [DataObjectMethod(DataObjectMethodType.Insert,false)]
         public int Waiters_Add(Waiter item)
         {
             using (eRestaurantContext context = new eRestaurantContext())
@@ -191,6 +191,30 @@ namespace eRestaurantSystem.BLL
                 context.SaveChanges();
             }
         }
+
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
+        public List<WaiterBilling>GetWaiterBillingReport()
+        {
+            using(eRestaurantContext context = new eRestaurantContext())
+            {
+                var result = from abillrow in context.Bills
+                             where abillrow.BillDate.Month == 5
+                             orderby abillrow.BillDate, abillrow.Waiter.LastName, abillrow.Waiter.FirstName
+                             select new WaiterBilling
+                             {
+                                 BillDate = abillrow.BillDate.Year + "/" + abillrow.BillDate.Month + "/" + abillrow.BillDate.Day,
+                                 WaiterName = abillrow.Waiter.LastName + ", " + abillrow.Waiter.FirstName,
+                                 BillID = abillrow.BillID,
+                                 BillTotal = abillrow.Items.Sum(eachbillitemrow => eachbillitemrow.Quantity * eachbillitemrow.SalePrice),
+                                 PartySize = abillrow.NumberInParty,
+                                 Contact = abillrow.Reservation.CustomerName
+                             };
+                return result.ToList();
+            }
+        }
+
+
+
 
         #region Add, Update, Delete of CRUD for CQRS
         [DataObjectMethod(DataObjectMethodType.Insert, false)]
