@@ -92,7 +92,10 @@
                             <asp:MenuItem Text="Single Row CRUD" NavigateUrl="~/CommandPages/WaiterAdmin"></asp:MenuItem>
                             <asp:MenuItem Text="Category Menu Item" NavigateUrl="~/Reports/CategoryMenuItemsReport"></asp:MenuItem>
                             <asp:MenuItem Text="Waiter Billing" NavigateUrl="~/Reports/WaiterBillingReport"></asp:MenuItem>
-
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Front Desk" Value="DDMenu">
+                            <asp:MenuItem Text="Front Desk" NavigateUrl="~/UXPages/FrontDesk"></asp:MenuItem>
+                        </asp:MenuItem>
                             <%--<li><a runat="server" href="~/SamplePages/ListView">LV Reservation</a></li>
                         <li><a runat="server" href="~/SamplePages/ReservationByDate">RPT Reservation</a></li>
                         <li><a runat="server" href="~/SamplePages/CategoryMenuItems">RPT2 CatMenuItem</a></li>
@@ -101,7 +104,7 @@
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>--%>
 
-                        </asp:MenuItem>
+                    
 
                         <asp:MenuItem Text="About Us" NavigateUrl="~/About.aspx"></asp:MenuItem>
                          <asp:MenuItem Text="Contact Us" NavigateUrl="~/Contact.aspx"></asp:MenuItem>
