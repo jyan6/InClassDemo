@@ -13,6 +13,14 @@ namespace eRestaurantSystem.DAL.Entities
 {
     public class Reservation
     {
+        //create a series of constant strings so actual value do not need
+        //to be remembered, instead, a resonable name will be use
+        public const string Booked = "B";
+        public const string Arrived = "A";
+        public const string Complete = "C";
+        public const string NoShow = "N";
+        public const string Cancelled = "S";
+
         [Key]
         public int ReservationID { get; set; }
         [Required]
