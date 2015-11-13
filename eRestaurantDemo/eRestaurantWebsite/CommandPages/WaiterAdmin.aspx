@@ -7,20 +7,19 @@
     <br /><br /><br />
     <h1>Waiter Admin CRUD</h1>
     <uc1:MessageUserControl runat="server" ID="MessageUserControl" />
-    
+    <br />
     <asp:Label ID="Label1" runat="server" Text="Waiter Names"></asp:Label>
-    <asp:DropDownList ID="WaiterList" runat="server" DataSourceID="ODSWaiterList" DataTextField="FullName" DataValueField="WaiterID" Height="16px" Width="227px">
- 
+    <asp:DropDownList ID="WaiterList" runat="server" DataSourceID="ODSWaiterList" DataTextField="FullName" DataValueField="WaiterID" Height="22px" Width="371px">
+        
     </asp:DropDownList>
     <asp:LinkButton ID="FetchWaiter" runat="server" OnClick="FetchWaiter_Click">Fetch Waiter</asp:LinkButton>
-    <asp:ObjectDataSource ID="ODSWaiterList" runat="server" OldValuesParameterFormatString="original_{0}" OnSelected="CheckForException" SelectMethod="Waiters_List" TypeName="eRestaurantSystem.BLL.AdminController">
-    </asp:ObjectDataSource>
+    <asp:ObjectDataSource ID="ODSWaiterList" runat="server" OldValuesParameterFormatString="original_{0}" OnSelected="CheckForException" SelectMethod="Waiters_List" TypeName="eRestaurantSystem.BLL.AdminController"></asp:ObjectDataSource>
     <br />
     <table align="center" style="width: 70%">
         <tr>
             <td>ID</td>
             <td>
-                <asp:Label ID="WaiterID" runat="server"></asp:Label>
+                <asp:Label ID="WaiterID" runat="server" ></asp:Label>
             </td>
         </tr>
         <tr>
@@ -30,8 +29,8 @@
             </td>
         </tr>
         <tr>
-            <td style="height: 22px">Last Name</td>
-            <td style="height: 22px">
+            <td>Last Name</td>
+            <td>
                 <asp:TextBox ID="LastName" runat="server"></asp:TextBox>
             </td>
         </tr>

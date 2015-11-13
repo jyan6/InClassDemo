@@ -24,5 +24,6 @@ public partial class UXPages_FrontDesk : System.Web.UI.Page
         DateTime info = sysmgr.GetLastBillDateTime();
         SearchDate.Text = info.ToString("yyyy-MM-dd");
         SearchTime.Text = info.ToString("HH:mm");
+
     }
 }

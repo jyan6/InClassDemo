@@ -9,5 +9,5 @@ using System.Web;
 
 namespace EatIn.UI
 {
-	public delegate void ProcessRequest();
+    public delegate void ProcessRequest();
 }

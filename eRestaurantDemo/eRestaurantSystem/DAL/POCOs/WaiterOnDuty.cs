@@ -11,5 +11,4 @@ namespace eRestaurantSystem.DAL.POCOs
         public int WaiterId { get; set; }
         public string FullName { get; set; }
     }
-
 }

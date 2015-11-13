@@ -6,16 +6,16 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
+              <Width>0.54167in</Width>
+            </TablixColumn>
+            <TablixColumn>
               <Width>1.1875in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.03125in</Width>
+              <Width>0.42708in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.72917in</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>1in</Width>
+              <Width>2.61458in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -31,10 +31,9 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Bill ID</Value>
+                              <Value>Bill #</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Verdana</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
@@ -46,10 +45,10 @@
                       <rd:DefaultName>Textbox2</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#949ca4</Color>
+                          <Color>#622424</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#7c8692</BackgroundColor>
+                        <BackgroundColor>#4e0000</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -69,8 +68,7 @@
                             <TextRun>
                               <Value>Total</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Verdana</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
@@ -82,10 +80,10 @@
                       <rd:DefaultName>Textbox3</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#949ca4</Color>
+                          <Color>#622424</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#7c8692</BackgroundColor>
+                        <BackgroundColor>#4e0000</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -105,8 +103,7 @@
                             <TextRun>
                               <Value>Size</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Verdana</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
@@ -118,10 +115,10 @@
                       <rd:DefaultName>Textbox5</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#949ca4</Color>
+                          <Color>#622424</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#7c8692</BackgroundColor>
+                        <BackgroundColor>#4e0000</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -141,8 +138,7 @@
                             <TextRun>
                               <Value>Contact</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Verdana</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
@@ -154,10 +150,10 @@
                       <rd:DefaultName>Textbox7</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#949ca4</Color>
+                          <Color>#622424</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#7c8692</BackgroundColor>
+                        <BackgroundColor>#4e0000</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -182,9 +178,10 @@
                             <TextRun>
                               <Value EvaluationMode="Constant" />
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontWeight>Normal</FontWeight>
-                                <Color>#333333</Color>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>#4e0000</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -194,10 +191,10 @@
                       <rd:DefaultName>Textbox21</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#aab6c4</Color>
+                          <Color>#de9646</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#96a4b2</BackgroundColor>
+                        <BackgroundColor>#ea9e52</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -217,10 +214,11 @@
                             <TextRun>
                               <Value>=Sum(Fields!BillTotal.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontWeight>Normal</FontWeight>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
                                 <Format>#,0.00;(#,0.00)</Format>
-                                <Color>#333333</Color>
+                                <Color>#4e0000</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -230,10 +228,10 @@
                       <rd:DefaultName>Textbox22</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#aab6c4</Color>
+                          <Color>#de9646</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#96a4b2</BackgroundColor>
+                        <BackgroundColor>#ea9e52</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -253,10 +251,11 @@
                             <TextRun>
                               <Value>=Sum(Fields!PartySize.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontWeight>Normal</FontWeight>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
                                 <Format>#,0;(#,0)</Format>
-                                <Color>#333333</Color>
+                                <Color>#4e0000</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -266,10 +265,10 @@
                       <rd:DefaultName>Textbox23</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#aab6c4</Color>
+                          <Color>#de9646</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#96a4b2</BackgroundColor>
+                        <BackgroundColor>#ea9e52</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -289,9 +288,10 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontWeight>Normal</FontWeight>
-                                <Color>#333333</Color>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>#4e0000</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -301,10 +301,161 @@
                       <rd:DefaultName>Textbox24</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#aab6c4</Color>
+                          <Color>#de9646</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#96a4b2</BackgroundColor>
+                        <BackgroundColor>#ea9e52</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox26">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value EvaluationMode="Constant" />
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>#4e0000</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox26</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#e8a25a</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>#f3af67</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox27">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!BillTotal.Value)</Value>
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Format>#,0.00;(#,0.00)</Format>
+                                <Color>#4e0000</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox27</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#e8a25a</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>#f3af67</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox28">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!PartySize.Value)</Value>
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Format>#,0;(#,0)</Format>
+                                <Color>#4e0000</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox28</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#e8a25a</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>#f3af67</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox29">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>#4e0000</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox29</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#e8a25a</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>#f3af67</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -329,9 +480,8 @@
                             <TextRun>
                               <Value>=Fields!BillID.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <Format>0;(0)</Format>
-                                <Color>#4d4d4d</Color>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -361,11 +511,11 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!BillTotal.Value</Value>
+                              <Value>=Sum(Fields!BillTotal.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <Format>0.00;(0.00)</Format>
-                                <Color>#4d4d4d</Color>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <Format>#,0.00;(#,0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -395,11 +545,11 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!PartySize.Value</Value>
+                              <Value>=Sum(Fields!PartySize.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>9pt</FontSize>
                                 <Format>0;(0)</Format>
-                                <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -431,8 +581,8 @@
                             <TextRun>
                               <Value>=Fields!Contact.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <Color>#4d4d4d</Color>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -467,11 +617,11 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Count(Fields!BillID.Value)</Value>
+                              <Value />
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontWeight>Normal</FontWeight>
-                                <Format>#,0;(#,0)</Format>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
@@ -482,10 +632,10 @@
                       <rd:DefaultName>Textbox15</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#8ca2ba</Color>
+                          <Color>#a81616</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#748caa</BackgroundColor>
+                        <BackgroundColor>#920202</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -505,8 +655,9 @@
                             <TextRun>
                               <Value>=Sum(Fields!BillTotal.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontWeight>Normal</FontWeight>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
                                 <Format>#,0.00;(#,0.00)</Format>
                                 <Color>White</Color>
                               </Style>
@@ -518,10 +669,10 @@
                       <rd:DefaultName>Textbox16</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#8ca2ba</Color>
+                          <Color>#a81616</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#748caa</BackgroundColor>
+                        <BackgroundColor>#920202</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -541,8 +692,9 @@
                             <TextRun>
                               <Value>=Sum(Fields!PartySize.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontWeight>Normal</FontWeight>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
                                 <Format>#,0;(#,0)</Format>
                                 <Color>White</Color>
                               </Style>
@@ -554,10 +706,10 @@
                       <rd:DefaultName>Textbox17</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#8ca2ba</Color>
+                          <Color>#a81616</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#748caa</BackgroundColor>
+                        <BackgroundColor>#920202</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -577,8 +729,9 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontWeight>Normal</FontWeight>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
@@ -589,10 +742,10 @@
                       <rd:DefaultName>Textbox18</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#8ca2ba</Color>
+                          <Color>#a81616</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#748caa</BackgroundColor>
+                        <BackgroundColor>#920202</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -617,7 +770,7 @@
           <TablixMembers>
             <TablixMember>
               <TablixHeader>
-                <Size>1.42708in</Size>
+                <Size>1.25in</Size>
                 <CellContents>
                   <Textbox Name="Textbox11">
                     <CanGrow>true</CanGrow>
@@ -628,8 +781,7 @@
                           <TextRun>
                             <Value>Date</Value>
                             <Style>
-                              <FontFamily>Tahoma</FontFamily>
-                              <FontSize>11pt</FontSize>
+                              <FontFamily>Verdana</FontFamily>
                               <FontWeight>Bold</FontWeight>
                               <Color>White</Color>
                             </Style>
@@ -641,10 +793,10 @@
                     <rd:DefaultName>Textbox11</rd:DefaultName>
                     <Style>
                       <Border>
-                        <Color>#949ca4</Color>
+                        <Color>#622424</Color>
                         <Style>Solid</Style>
                       </Border>
-                      <BackgroundColor>#7c8692</BackgroundColor>
+                      <BackgroundColor>#4e0000</BackgroundColor>
                       <PaddingLeft>2pt</PaddingLeft>
                       <PaddingRight>2pt</PaddingRight>
                       <PaddingTop>2pt</PaddingTop>
@@ -656,19 +808,18 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1.9375in</Size>
+                    <Size>2.26042in</Size>
                     <CellContents>
-                      <Textbox Name="Textbox43">
+                      <Textbox Name="Textbox9">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>Waiter</Value>
+                                <Value>Name</Value>
                                 <Style>
-                                  <FontFamily>Tahoma</FontFamily>
-                                  <FontSize>11pt</FontSize>
+                                  <FontFamily>Verdana</FontFamily>
                                   <FontWeight>Bold</FontWeight>
                                   <Color>White</Color>
                                 </Style>
@@ -677,13 +828,13 @@
                             <Style />
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>Textbox43</rd:DefaultName>
+                        <rd:DefaultName>Textbox9</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>#949ca4</Color>
+                            <Color>#622424</Color>
                             <Style>Solid</Style>
                           </Border>
-                          <BackgroundColor>#7c8692</BackgroundColor>
+                          <BackgroundColor>#4e0000</BackgroundColor>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -711,7 +862,7 @@
                 </SortExpression>
               </SortExpressions>
               <TablixHeader>
-                <Size>1.42708in</Size>
+                <Size>1.25in</Size>
                 <CellContents>
                   <Textbox Name="BillDate">
                     <CanGrow>true</CanGrow>
@@ -722,10 +873,11 @@
                           <TextRun>
                             <Value>=Fields!BillDate.Value</Value>
                             <Style>
-                              <FontFamily>Tahoma</FontFamily>
-                              <FontWeight>Normal</FontWeight>
+                              <FontFamily>Verdana</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
                               <Format>dd-MMM-yy</Format>
-                              <Color>#333333</Color>
+                              <Color>#4e0000</Color>
                             </Style>
                           </TextRun>
                         </TextRuns>
@@ -735,10 +887,10 @@
                     <rd:DefaultName>BillDate</rd:DefaultName>
                     <Style>
                       <Border>
-                        <Color>#aab6c4</Color>
+                        <Color>#de9646</Color>
                         <Style>Solid</Style>
                       </Border>
-                      <BackgroundColor>#96a4b2</BackgroundColor>
+                      <BackgroundColor>#ea9e52</BackgroundColor>
                       <PaddingLeft>2pt</PaddingLeft>
                       <PaddingRight>2pt</PaddingRight>
                       <PaddingTop>2pt</PaddingTop>
@@ -750,9 +902,9 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1.9375in</Size>
+                    <Size>2.26042in</Size>
                     <CellContents>
-                      <Textbox Name="Textbox44">
+                      <Textbox Name="Textbox20">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
@@ -761,22 +913,23 @@
                               <TextRun>
                                 <Value>Total</Value>
                                 <Style>
-                                  <FontFamily>Tahoma</FontFamily>
-                                  <FontWeight>Normal</FontWeight>
-                                  <Color>#333333</Color>
+                                  <FontFamily>Verdana</FontFamily>
+                                  <FontSize>9pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                  <Color>#4e0000</Color>
                                 </Style>
                               </TextRun>
                             </TextRuns>
                             <Style />
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>Textbox44</rd:DefaultName>
+                        <rd:DefaultName>Textbox20</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>#aab6c4</Color>
+                            <Color>#de9646</Color>
                             <Style>Solid</Style>
                           </Border>
-                          <BackgroundColor>#96a4b2</BackgroundColor>
+                          <BackgroundColor>#ea9e52</BackgroundColor>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -785,50 +938,48 @@
                       </Textbox>
                     </CellContents>
                   </TablixHeader>
-                  <TablixMembers>
-                    <TablixMember />
-                  </TablixMembers>
                   <KeepWithGroup>After</KeepWithGroup>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="WaiterName1">
+                  <Group Name="Name">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!WaiterName.Value</GroupExpression>
+                      <GroupExpression>=Fields!Name.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!WaiterName.Value</Value>
+                      <Value>=Fields!Name.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>1.9375in</Size>
+                    <Size>2.26042in</Size>
                     <CellContents>
-                      <Textbox Name="WaiterName">
+                      <Textbox Name="Name">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>=Fields!WaiterName.Value</Value>
+                                <Value>=Fields!Name.Value</Value>
                                 <Style>
-                                  <FontFamily>Tahoma</FontFamily>
-                                  <FontWeight>Normal</FontWeight>
-                                  <Color>#333333</Color>
+                                  <FontFamily>Verdana</FontFamily>
+                                  <FontSize>9pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                  <Color>#4e0000</Color>
                                 </Style>
                               </TextRun>
                             </TextRuns>
                             <Style />
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>WaiterName</rd:DefaultName>
+                        <rd:DefaultName>Name</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>#bec8ce</Color>
+                            <Color>#e8a25a</Color>
                             <Style>Solid</Style>
                           </Border>
-                          <BackgroundColor>#aab6c4</BackgroundColor>
+                          <BackgroundColor>#f3af67</BackgroundColor>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -839,19 +990,26 @@
                   </TablixHeader>
                   <TablixMembers>
                     <TablixMember>
+                      <KeepWithGroup>After</KeepWithGroup>
+                    </TablixMember>
+                    <TablixMember>
                       <Group Name="Details" />
                       <Visibility>
                         <Hidden>true</Hidden>
-                        <ToggleItem>WaiterName</ToggleItem>
+                        <ToggleItem>Name</ToggleItem>
                       </Visibility>
                     </TablixMember>
                   </TablixMembers>
+                  <Visibility>
+                    <Hidden>true</Hidden>
+                    <ToggleItem>BillDate</ToggleItem>
+                  </Visibility>
                 </TablixMember>
               </TablixMembers>
             </TablixMember>
             <TablixMember>
               <TablixHeader>
-                <Size>1.42708in</Size>
+                <Size>1.25in</Size>
                 <CellContents>
                   <Textbox Name="Textbox13">
                     <CanGrow>true</CanGrow>
@@ -862,8 +1020,9 @@
                           <TextRun>
                             <Value>Total</Value>
                             <Style>
-                              <FontFamily>Tahoma</FontFamily>
-                              <FontWeight>Normal</FontWeight>
+                              <FontFamily>Verdana</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
                               <Color>White</Color>
                             </Style>
                           </TextRun>
@@ -874,10 +1033,10 @@
                     <rd:DefaultName>Textbox13</rd:DefaultName>
                     <Style>
                       <Border>
-                        <Color>#8ca2ba</Color>
+                        <Color>#a81616</Color>
                         <Style>Solid</Style>
                       </Border>
-                      <BackgroundColor>#748caa</BackgroundColor>
+                      <BackgroundColor>#920202</BackgroundColor>
                       <PaddingLeft>2pt</PaddingLeft>
                       <PaddingRight>2pt</PaddingRight>
                       <PaddingTop>2pt</PaddingTop>
@@ -889,9 +1048,9 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1.9375in</Size>
+                    <Size>2.26042in</Size>
                     <CellContents>
-                      <Textbox Name="Textbox47">
+                      <Textbox Name="Textbox14">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
@@ -900,8 +1059,9 @@
                               <TextRun>
                                 <Value />
                                 <Style>
-                                  <FontFamily>Tahoma</FontFamily>
-                                  <FontWeight>Normal</FontWeight>
+                                  <FontFamily>Verdana</FontFamily>
+                                  <FontSize>9pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
                                   <Color>White</Color>
                                 </Style>
                               </TextRun>
@@ -909,13 +1069,13 @@
                             <Style />
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>Textbox47</rd:DefaultName>
+                        <rd:DefaultName>Textbox14</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>#8ca2ba</Color>
+                            <Color>#a81616</Color>
                             <Style>Solid</Style>
                           </Border>
-                          <BackgroundColor>#748caa</BackgroundColor>
+                          <BackgroundColor>#920202</BackgroundColor>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -924,9 +1084,6 @@
                       </Textbox>
                     </CellContents>
                   </TablixHeader>
-                  <TablixMembers>
-                    <TablixMember />
-                  </TablixMembers>
                 </TablixMember>
               </TablixMembers>
               <KeepWithGroup>Before</KeepWithGroup>
@@ -934,8 +1091,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>WaiterBillingDS</DataSetName>
-        <Height>1in</Height>
-        <Width>7.3125in</Width>
+        <Height>1.25in</Height>
+        <Width>8.28125in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -943,10 +1100,10 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>1.25in</Height>
+    <Height>1.29167in</Height>
     <Style />
   </Body>
-  <Width>8.14583in</Width>
+  <Width>8.95708in</Width>
   <Page>
     <PageHeader>
       <Height>1in</Height>
@@ -961,9 +1118,7 @@
               <TextRuns>
                 <TextRun>
                   <Value>=Globals!ExecutionTime</Value>
-                  <Style>
-                    <Format>f</Format>
-                  </Style>
+                  <Style />
                 </TextRun>
               </TextRuns>
               <Style>
@@ -972,9 +1127,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>ExecutionTime</rd:DefaultName>
-          <Left>0.16667in</Left>
+          <Top>0.08208in</Top>
+          <Left>0.14458in</Left>
           <Height>0.25in</Height>
-          <Width>1in</Width>
+          <Width>3.02083in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1002,9 +1158,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>UserID</rd:DefaultName>
-          <Left>6.4675in</Left>
+          <Top>0.13417in</Top>
+          <Left>7.02083in</Left>
           <Height>0.25in</Height>
-          <Width>1in</Width>
+          <Width>1.26042in</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -1016,30 +1173,29 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Textbox Name="Textbox33">
+        <Textbox Name="Textbox32">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
           <Paragraphs>
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>="Waiter Billing Report for May"</Value>
+                  <Value>="Waiter Billing for May 2014"</Value>
                   <Style>
-                    <FontFamily>Comic Sans MS</FontFamily>
-                    <FontSize>20pt</FontSize>
+                    <FontFamily>Tahoma</FontFamily>
+                    <FontSize>22pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
               </TextRuns>
-              <Style>
-                <TextAlign>Left</TextAlign>
-              </Style>
+              <Style />
             </Paragraph>
           </Paragraphs>
-          <rd:DefaultName>Textbox33</rd:DefaultName>
-          <Top>0.31944in</Top>
-          <Left>0.16667in</Left>
-          <Height>0.50222in</Height>
-          <Width>5.41667in</Width>
+          <rd:DefaultName>Textbox32</rd:DefaultName>
+          <Top>0.40153in</Top>
+          <Left>0.14458in</Left>
+          <Height>0.57639in</Height>
+          <Width>4.58333in</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
@@ -1063,14 +1219,14 @@
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Textbox Name="PageNumber">
+        <Textbox Name="Textbox33">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
           <Paragraphs>
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>=Globals!PageNumber</Value>
+                  <Value>=Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -1079,11 +1235,11 @@
               </Style>
             </Paragraph>
           </Paragraphs>
-          <rd:DefaultName>PageNumber</rd:DefaultName>
-          <Top>0.53in</Top>
-          <Left>3.19792in</Left>
+          <rd:DefaultName>Textbox33</rd:DefaultName>
+          <Top>0.23833in</Top>
+          <Left>3.51042in</Left>
           <Height>0.25in</Height>
-          <Width>1in</Width>
+          <Width>1.87375in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1114,7 +1270,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>66861c05-3d10-456a-9d17-84f3d133bbd6</rd:DataSourceID>
+      <rd:DataSourceID>fc31ced5-41e5-4fa0-b7ca-ec1cbe23b671</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -1128,8 +1284,8 @@
           <DataField>BillDate</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="WaiterName">
-          <DataField>WaiterName</DataField>
+        <Field Name="Name">
+          <DataField>Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="BillID">
@@ -1158,5 +1314,5 @@
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>ada93343-0b4a-44a2-bbd7-f751d4a73e1d</rd:ReportID>
+  <rd:ReportID>98f893e7-fb70-49e7-9f00-0ca45772e069</rd:ReportID>
 </Report>

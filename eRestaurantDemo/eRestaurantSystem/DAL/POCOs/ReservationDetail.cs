@@ -13,6 +13,5 @@ namespace eRestaurantSystem.DAL.POCOs
         public int NumberInParty { get; set; }
         public string ContactPhone { get; set; }
         public string ReservationStatus { get; set; }
-        
     }
 }

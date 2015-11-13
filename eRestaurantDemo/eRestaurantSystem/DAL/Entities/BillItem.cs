@@ -19,7 +19,7 @@ namespace eRestaurantSystem.DAL.Entities
         [Key, Column(Order = 2)]
         public int ItemID { get; set; }
 
-        [Required(ErrorMessage = "Quantity is required"), Range(1, 20, ErrorMessage = "Quantity must be between 1 and 20")]
+        [Required(ErrorMessage="Quantity is required"), Range(1, 20, ErrorMessage="Quantity must be between 1 and 20")]
         public int Quantity { get; set; }
         [Required(ErrorMessage = "Sale Price is required"), Range(0.00, 50, ErrorMessage = "Sale Price must be between zero and $50.00 inclusive")]
         public decimal SalePrice { get; set; }
@@ -31,4 +31,5 @@ namespace eRestaurantSystem.DAL.Entities
         public virtual Bill Bill { get; set; }
         public virtual Item Item { get; set; }
     }
+
 }

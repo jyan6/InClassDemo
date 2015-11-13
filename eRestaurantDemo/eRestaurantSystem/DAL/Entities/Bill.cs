@@ -23,6 +23,7 @@ namespace eRestaurantSystem.DAL.Entities
         public bool PaidStatus { get; set; }
         public int WaiterID { get; set; }
         public int? TableID { get; set; }
+        public int? ReservationID { get; set; }
         public string Comment { get; set; }
 
         // Navigation Properties
@@ -30,6 +31,7 @@ namespace eRestaurantSystem.DAL.Entities
         public virtual Waiter Waiter { get; set; }
         public virtual Table Table { get; set; }
         public virtual Reservation Reservation { get; set; }
+    
 
         public Bill()
         {

@@ -7,7 +7,8 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
-    <h1>SpecialEvents CRUD using ListView and ODS</h1>
+    <br />  <br />  <br />  <br />  <br />
+<h1>SpecialEvents CRUD using ListView and ODS</h1>
     <uc1:MessageUserControl runat="server" ID="MessageUserControl" />
     <asp:ListView ID="SpecialEventsCRUD" runat="server" 
         DataSourceID="ODSSpecialEvents" 
@@ -27,6 +28,7 @@
                 <td>
                     <asp:CheckBox ID="ActiveCheckBox" runat="server" Checked='<%# Eval("Active") %>' Enabled="false" />
                 </td>
+                
             </tr>
         </AlternatingItemTemplate>
         <EditItemTemplate>
@@ -44,6 +46,7 @@
                 <td>
                     <asp:CheckBox ID="ActiveCheckBox" runat="server" Checked='<%# Bind("Active") %>' />
                 </td>
+               
             </tr>
         </EditItemTemplate>
         <EmptyDataTemplate>
@@ -68,6 +71,7 @@
                 <td>
                     <asp:CheckBox ID="ActiveCheckBox" runat="server" Checked='<%# Bind("Active") %>' />
                 </td>
+               
             </tr>
         </InsertItemTemplate>
         <ItemTemplate>
@@ -85,6 +89,7 @@
                 <td>
                     <asp:CheckBox ID="ActiveCheckBox" runat="server" Checked='<%# Eval("Active") %>' Enabled="false" />
                 </td>
+             
             </tr>
         </ItemTemplate>
         <LayoutTemplate>
@@ -97,6 +102,7 @@
                                 <th runat="server">EventCode</th>
                                 <th runat="server">Description</th>
                                 <th runat="server">Active</th>
+                               
                             </tr>
                             <tr id="itemPlaceholder" runat="server">
                             </tr>
@@ -131,6 +137,7 @@
                 <td>
                     <asp:CheckBox ID="ActiveCheckBox" runat="server" Checked='<%# Eval("Active") %>' Enabled="false" />
                 </td>
+              
             </tr>
         </SelectedItemTemplate>
 
@@ -138,12 +145,15 @@
     <asp:ObjectDataSource ID="ODSSpecialEvents" runat="server" 
         DataObjectTypeName="eRestaurantSystem.DAL.Entities.SpecialEvent" 
         DeleteMethod="SpecialEvents_Delete" 
-        InsertMethod="SpecialEvents_Add" 
-        SelectMethod="SpecialEvents_List"
+        InsertMethod="SpecialEvents_Add"  
         UpdateMethod="SpecialEvents_Update"
+        SelectMethod="SpecialEvents_List"
         OldValuesParameterFormatString="original_{0}" 
-        TypeName="eRestaurantSystem.BLL.AdminController" OnDeleted="CheckForException" OnInserted="CheckForException" OnSelected="CheckForException" OnUpdated="CheckForException" 
-        >
+        TypeName="eRestaurantSystem.BLL.AdminController" 
+        OnDeleted="CheckForException" 
+        OnInserted="CheckForException" 
+        OnSelected="CheckForException" 
+        OnUpdated="CheckForException">
 
     </asp:ObjectDataSource>
 </asp:Content>

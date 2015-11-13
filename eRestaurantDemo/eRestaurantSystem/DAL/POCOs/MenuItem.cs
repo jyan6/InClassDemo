@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-#region 
-
+#region Additional Namespaces
 #endregion
+
 namespace eRestaurantSystem.DAL.POCOs
 {
     public class MenuItem
@@ -15,6 +15,5 @@ namespace eRestaurantSystem.DAL.POCOs
         public decimal Price { get; set; }
         public int? Calories { get; set; }
         public string Comment { get; set; }
-
     }
 }
