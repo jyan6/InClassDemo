@@ -26,4 +26,21 @@ public partial class UXPages_FrontDesk : System.Web.UI.Page
         SearchTime.Text = info.ToString("HH:mm");
 
     }
+    protected void SeatingGridView_SelectedIndexChanging(object sender, GridViewSelectEventArgs e)
+    {
+        MessageUserControl.TryRun(() =>
+            {
+                GridViewRow agvrow = SeatingGridView.Rows[e.NewSelectedIndex];
+                //accessing a web control on the girdview row usings .FindControl("xxx") as datatype
+                string tablenumber = (agvrow.FindControl("TableNumber") as Label).Text;
+                string numberinparty = (agvrow.FindControl("NumberInParty") as TextBox).Text;
+                string waiterid = (agvrow.FindControl("WaiterList") as DropDownList).SelectedValue;
+                var when = DateTime.Parse(SearchDate.Text).Add(TimeSpan.Parse(SearchTime.Text));
+
+                //standard call to insert a record into the database
+                AdminController sysmgr = new AdminController();
+                sysmgr.SeatCustomer(when, byte.Parse(tablenumber), int.Parse(numberinparty), int.Parse(waiterid));
+                SeatingGridView.DataBind();
+            }, "Customer Seated", "New walk-in customer has been saved");
+    }
 }

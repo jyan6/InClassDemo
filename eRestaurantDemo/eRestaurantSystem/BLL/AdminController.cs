@@ -452,6 +452,70 @@ namespace eRestaurantSystem.BLL
             }
         }
 
+        [DataObjectMethod(DataObjectMethodType.Select,false)]//20151116 for linkbutton
+        public List<SeatingSummary> AvailableSeatingByDateTime(DateTime date,TimeSpan time)
+
+        {
+            var results = from seats in SeatingByDateTime(date, time)
+                          where !seats.Taken
+                          select seats;
+          return results.ToList();
+                         
+        }
+
+        public void SeatCustomer(DateTime when, byte tablenumber,
+                                 int numberinparty, int waiterid)
+        {
+
+            //business logic checking should be done
+            //BEFORE attempting to place data on the database
+            //rule1: is the seat available
+            //rule2: is the selected table capicity sufficicent
+            // get the available seats 
+
+            var availableseatrs = AvailableSeatingByDateTime(when.Date,
+                                                             when.TimeOfDay);
+            // start my transaction
+            using (eRestaurantContext context = new eRestaurantContext())
+            {
+
+                //create a holding list for possible  business logic
+                //this is need for the MessageUserControl
+                List<string> errors = new List<string>();
+
+                if (!availableseatrs.Exists(foreachseat => foreachseat.Table == tablenumber))
+                {
+                    //the table number is not available     
+                    errors.Add("Table is currently not available");
+
+                }
+                else if (!availableseatrs.Exists(foreachseat => foreachseat.Table == tablenumber
+                            && foreachseat.Seating >= numberinparty))
+                {
+                    //the table is available but not large enough
+                    errors.Add("Insufficient seating caoacity for number of customers");
+                }
+                //check if any errors to business rules exist
+                if (errors.Count > 0)
+                {
+                    //throw an exception which will terminate the transaction
+                    //BusinessRuleException is part of the MessageUserControl setup
+                    throw new BusinessRuleException("Unable to seat customer", errors);
+
+                    Bill seatedcustomer = new Bill();
+                    seatedcustomer.BillDate = when;
+                    seatedcustomer.NumberInParty = numberinparty;
+                    seatedcustomer.WaiterID = waiterid;
+                    seatedcustomer.TableID = tablenumber;
+                    //issue the command to add a record to the Bill entity
+                    context.Bills.Add(seatedcustomer);
+                    //save and commit the changes to the entity
+                    context.SaveChanges();
+
+                }
+            }
+        }
+
         #endregion
     }//eof class
 }//eof namespace
