@@ -118,7 +118,8 @@
                         <h4><%# Item.SeatingTime %></h4>
                         <asp:ListView ID="ReservationSummaryListView" runat="server"
                                 ItemType="eRestaurantSystem.DAL.POCOs.ReservationSummary"
-                                DataSource="<%# Item.Reservations %>">
+                                DataSource="<%# Item.Reservations %>"
+                                OnItemCommand="ReservationSummaryListView_ItemCommand">
                             <LayoutTemplate>
                                 <div class="seating">
                                     <span runat="server" id="itemPlaceholder" />
@@ -130,13 +131,39 @@
                                     <%# Item.NumberInParty %> —
                                     <%# Item.Status %> —
                                     PH:
-                                    <%# Item.Contact %>
+                                    <%# Item.Contact %> -
+                                    <asp:LinkButton ID="SeatReservation" runat="server"
+                                                CommandName="Seat"
+                                                CommandArgument='<%# Item.ID %>'>
+                                                Reservation Seating
+                                                <span class="glyphicon glyphicon-plus"></span>
+                                    </asp:LinkButton>
                                 </div>
                             </ItemTemplate>
                         </asp:ListView>
                     </div>
                 </ItemTemplate>
             </asp:Repeater>
+            <%--This panel will display the waiter drop down list and the multi-line control for selecting waiter and tables for reservation seating--%>
+            <asp:Panel ID="ReservationSeatingPanel" runat="server" Visible='<%# ShowReservationSeating() %>'>
+                <asp:DropDownList ID="WaiterDropDownList" runat="server" CssClass="seating"
+                    AppendDataBoundItems="true" DataSourceID="WaitersDataSource"
+                    DataTextField="FullName" DataValueField="WaiterId">
+                    <asp:listitem value="0">[select a waiter]</asp:listitem>
+                 </asp:DropDownList>
+                 <asp:ListBox ID="ReservationTableListBox" runat="server" CssClass="seating"                             
+                    DataSourceID="AvailableSeatingObjectDataSource" SelectionMode="Multiple" Rows="14"
+                    DataTextField="Table" DataValueField="Table">
+                 </asp:ListBox>
+            </asp:Panel>
+                <asp:ObjectDataSource ID="AvailableSeatingObjectDataSource" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="AvailableSeatingByDateTime" TypeName="eRestaurantSystem.BLL.AdminController">
+                    <SelectParameters>
+                        <asp:ControlParameter ControlID="Mocker" Name="date" PropertyName="MockerDate" Type="DateTime" />
+                        <asp:ControlParameter ControlID="Mocker" DbType="Time" Name="time" PropertyName="MockerTime" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
+           
+
             <!-- TypeName= parameters must be directed to your
                 current application locations -->
             <asp:ObjectDataSource runat="server" ID="ReservationsDataSource" 
