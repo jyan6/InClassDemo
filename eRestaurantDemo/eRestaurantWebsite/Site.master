@@ -100,6 +100,7 @@
                             <asp:MenuItem Text="Front Desk" NavigateUrl="~/UXPages/FrontDesk.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="Serving Table" NavigateUrl="~/UXPages/ServingTables.aspx"></asp:MenuItem>
                         </asp:MenuItem>
+                        <asp:MenuItem Text="Security" NavigateUrl="~/Admin/Security/Default.aspx"></asp:MenuItem>
                          <asp:MenuItem Text="About Us" NavigateUrl="~/About.aspx"></asp:MenuItem>
                          <asp:MenuItem Text="Contact Us" NavigateUrl="~/Contact.aspx"></asp:MenuItem>
                     </Items>

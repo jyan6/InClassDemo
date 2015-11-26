@@ -9,8 +9,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace eRestaurantSystem.BLL.Security
 {
+     
+
     public class UserManager : UserManager<ApplicationUser>
     {
         #region Constants
